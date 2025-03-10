@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, Button, Container, Dropdown } from "react-bootstrap";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Bookingsection from "../bookingsection/herosection"
 
 // Full country list with flags
 const countries = [
@@ -41,6 +42,7 @@ const Header = () => {
   };
 
   return (
+   <>
     <div className="bg-primary">
       <Container>
         <Navbar bg="primary" expand="lg" variant="dark">
@@ -136,7 +138,10 @@ const Header = () => {
           </Navbar.Collapse>
         </Navbar>
       </Container>
+      
     </div>
+    <Bookingsection/>
+   </>
   );
 };
 
